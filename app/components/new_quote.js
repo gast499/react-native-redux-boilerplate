@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {StyleSheet, View, Dimensions, Text, TextInput, TouchableOpacity} from 'react-native';
-import { connect } from 'react-redux';
-import { addQuote, updateQuote} from "../actions";
-import { Actions } from 'react-native-router-flux';
+import {connect} from 'react-redux';
+import {addQuote, updateQuote} from "../actions";
+import {Actions} from 'react-native-router-flux';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 
 const {width: windowWidth, height: windowHeight} = Dimensions.get('window');
@@ -18,7 +18,7 @@ class NewQuote extends Component {
         this.addQuote = this.addQuote.bind(this);
     }
 
-    generateID(){
+    generateID() {
         let d = new Date().getTime();
         let id = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
             let r = (d + Math.random() * 16) % 16 | 0;
@@ -28,8 +28,8 @@ class NewQuote extends Component {
         return id;
     }
 
-    addQuote(){
-        if (this.props.edit){
+    addQuote() {
+        if (this.props.edit) {
             let quote = this.props.quote;
             quote['author'] = this.state.author;
             quote['quote'] = this.state.quote;
@@ -42,5 +42,37 @@ class NewQuote extends Component {
         }
         Actions.pop();
     }
-    
+
+    render() {
+        return (
+            <View style={{flex: 1, backgroundColor: '#fff'}}>
+                <View style={{flex: 1, paddingLeft: 10, paddingRight: 10}}>
+                    <TextInput
+                        onChangeText={(text) => this.setState({author: text})}
+                        placeholder={"Author"}
+                        autoFocus={true}
+                        style={[styles.title]}
+                        value={this.state.author}
+                    />
+                    <TextInput
+                        multiline={true}
+                        onChangeText={(text) => this.setState({quote: text})}
+                        placeholder={"Enter Quote"}
+                        style={[styles.quote]}
+                        value={this.state.quote}
+                    />
+                </View>
+                <TouchableOpacity style={[styles.saveBtn]}
+                                  disabled={(this.state.author.length > 0 && this.state.quote.length > 0) ? false : true}
+                                  onPress={this.addQuote}>
+                    <Text style={[styles.buttonText, {
+                        color: (this.state.author.length > 0 && this.state.quote.length > 0) ? "#FFF" : "rgba(255,255,255,.5)"
+                    }]}>
+                        Save
+                    </Text>
+                </TouchableOpacity>
+                <KeyboardSpacer/>
+            </View>
+        );
+    }
 }

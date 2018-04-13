@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/app/components/new_quote.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
-              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+              <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -238,7 +238,7 @@
       <workItem from="1523574272630" duration="843000" />
       <workItem from="1523579794669" duration="4344000" />
       <workItem from="1523584999055" duration="484000" />
-      <workItem from="1523589883046" duration="5035000" />
+      <workItem from="1523589883046" duration="5733000" />
     </task>
     <task id="LOCAL-00001" summary="Created File Architecture">
       <created>1523580696375</created>
@@ -450,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523595512610</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Created constructor, generateID, and addQuote functions">
+      <created>1523596112600</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1523596112600</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10706000" />
+    <option name="totallyTimeSpent" value="11404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -487,7 +494,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created rootReducer function" />
     <MESSAGE value="Created home.js file and import statements" />
     <MESSAGE value="Update Instructions with Done" />
     <MESSAGE value="Created Home class, added constructor, and componentDidMount function" />
@@ -512,7 +518,8 @@
     <MESSAGE value="Added DELETE_QUOTE action reducer" />
     <MESSAGE value="Added cloneObject and getIndex functions" />
     <MESSAGE value="Create NewQuote class and imported packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create NewQuote class and imported packages" />
+    <MESSAGE value="Created constructor, generateID, and addQuote functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created constructor, generateID, and addQuote functions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/instructions.json">
@@ -696,7 +703,7 @@
     <entry file="file://$PROJECT_DIR$/app/components/new_quote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
