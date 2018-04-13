@@ -54,3 +54,15 @@ class Home extends Component {
         );
     }
 };
+
+function mapStateToProps(state, props) {
+    return {
+        loading: state.dataReducer.loading,
+        data: state.dataReducer.data
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators(Actions, dispatch);
+}
+

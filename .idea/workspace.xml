@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/app/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
-              <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#15#56#0" expanded="true" />
               </folding>
@@ -180,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1523574267948</updated>
       <workItem from="1523574272630" duration="843000" />
-      <workItem from="1523579794669" duration="2800000" />
+      <workItem from="1523579794669" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="Created File Architecture">
       <created>1523580696375</created>
@@ -252,11 +252,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523582372882</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Created renderItem function">
+      <created>1523582642143</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523582642143</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3643000" />
+    <option name="totallyTimeSpent" value="3787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -299,7 +306,8 @@
     <MESSAGE value="Update Instructions with Done" />
     <MESSAGE value="Created Home class, added constructor, and componentDidMount function" />
     <MESSAGE value="Created render function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created render function" />
+    <MESSAGE value="Created renderItem function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created renderItem function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/actions/index.js">
@@ -329,7 +337,7 @@
     <entry file="file://$PROJECT_DIR$/app/components/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="e#15#56#0" expanded="true" />
           </folding>
