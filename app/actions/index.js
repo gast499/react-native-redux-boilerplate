@@ -45,3 +45,25 @@ export function updateQuote(quote) {
         });
     };
 }
+
+export function deleteQuote(id) {
+    return (dispatch) => {
+        AsyncStorage.getItem('data', (err,quotes) => {
+            if (quotes !== null){
+                quotes = JSON.parse(quotes);
+                var index = getIndex(quotes, id);
+                if (index !== -1) {
+                    quotes.splice(index, 1);
+                }
+                AsyncStorage.setItem('data', JSON.stringify(quotes), () => {
+                    dispatch({ type: DELETE_QUOTE, id:id});
+                });
+            }
+        });
+    };
+}
+
+function getIndex(data, id) {
+    let clone = JSON.parse(JSON.stringify(data));
+    return clone.findIndex((obj) => parseInt(obj.id) === parseInt(id));
+}

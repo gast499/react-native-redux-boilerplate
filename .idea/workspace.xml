@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/app/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
-              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <caret line="67" column="71" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -222,7 +222,7 @@
       <workItem from="1523574272630" duration="843000" />
       <workItem from="1523579794669" duration="4344000" />
       <workItem from="1523584999055" duration="484000" />
-      <workItem from="1523589883046" duration="2827000" />
+      <workItem from="1523589883046" duration="3128000" />
     </task>
     <task id="LOCAL-00001" summary="Created File Architecture">
       <created>1523580696375</created>
@@ -378,11 +378,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523593552516</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Created updateQuote function">
+      <created>1523593883264</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1523593883264</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8498000" />
+    <option name="totallyTimeSpent" value="8799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -437,7 +444,8 @@
     <MESSAGE value="Updated App to make app/index.js the new entry point" />
     <MESSAGE value="Created quotes.json" />
     <MESSAGE value="Imported packages, created addQuote and getQuotes functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Imported packages, created addQuote and getQuotes functions" />
+    <MESSAGE value="Created updateQuote function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created updateQuote function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/instructions.json">
@@ -605,7 +613,7 @@
     <entry file="file://$PROJECT_DIR$/app/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
-          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <caret line="67" column="71" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
         </state>
       </provider>
     </entry>
