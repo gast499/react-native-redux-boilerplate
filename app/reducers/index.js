@@ -1,13 +1,16 @@
 import {combineReducers} from 'redux';
-import {DATA_AVAILABLE} from "../actions/";
+import {QUOTES_AVAILABLE, ADD_QUOTE, UPDATE_QUOTE, DELETE_QUOTE} from "../actions/";
 
-let dataState = { data: [], loading:true};
+let dataState = { quotes: [], loading:true};
 
 const dataReducer = ( state = dataState, action) => {
     switch (action.type) {
-        case DATA_AVAILABLE:
-            state = Object.assign({}, state, { data: action.data, loading:false});
+        case ADD_QUOTE: {
+            let quotes = cloneObject(state.quotes);
+            quotes.unshift(action.quote);
+            state = Object.assign({}, state, {quotes: quotes});
             return state;
+        }
         default:
             return state;
     }
