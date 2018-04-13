@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b277c4-175f-49b0-9dd2-9036f7267244" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/instructions.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/instructions.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="instructions.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="instructions.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/instructions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="311">
+              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -47,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -74,10 +74,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/instructions.json" />
         <option value="$PROJECT_DIR$/app/actions/index.js" />
         <option value="$PROJECT_DIR$/app/reducers/index.js" />
         <option value="$PROJECT_DIR$/app/components/home.js" />
+        <option value="$PROJECT_DIR$/app/instructions.json" />
       </list>
     </option>
   </component>
@@ -180,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1523574267948</updated>
       <workItem from="1523574272630" duration="843000" />
-      <workItem from="1523579794669" duration="1958000" />
+      <workItem from="1523579794669" duration="2016000" />
     </task>
     <task id="LOCAL-00001" summary="Created File Architecture">
       <created>1523580696375</created>
@@ -224,11 +224,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523581586414</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created home.js file and import statements">
+      <created>1523581813504</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523581813504</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2801000" />
+    <option name="totallyTimeSpent" value="2859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -267,16 +274,10 @@
     <MESSAGE value="Created getData function" />
     <MESSAGE value="Created reducer and dataReducer function" />
     <MESSAGE value="Created rootReducer function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created rootReducer function" />
+    <MESSAGE value="Created home.js file and import statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created home.js file and import statements" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/instructions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -301,6 +302,13 @@
           <folding>
             <element signature="e#15#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/instructions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>

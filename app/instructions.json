@@ -14,11 +14,11 @@
     },
     {
       "title": "Create your first action",
-      "description": "The action is a basic function called from the component whenever we want the whole state of the app to be changed. Our action creator is a simple function returning an object (the action itself)with a type attribute expressing what happened with the app.\nIn your actions folder create a js file 'index.js'"
+      "description": "The action is a basic function called from the component whenever we want the whole state of the app to be changed. Our action creator is a simple function returning an object (the action itself)with a type attribute expressing what happened with the app.\nIn your actions folder create a js file 'index.js' --DONE"
     },
     {
       "title": "Create your first reducer",
-      "description": "Reducers are the ones in charge of updating the state of the app. Redux will automatically pass the current state of the app and the action occurred. It’s up to the reducer to realize if it needs to modify the state or not based on the action.type.\nIn your reducers folder create a js file 'index.js'"
+      "description": "Reducers are the ones in charge of updating the state of the app. Redux will automatically pass the current state of the app and the action occurred. It’s up to the reducer to realize if it needs to modify the state or not based on the action.type.\nIn your reducers folder create a js file 'index.js' --DONE"
     },
     {
       "title": "Create your component",
