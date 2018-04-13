@@ -28,7 +28,16 @@ const dataReducer = (state = dataState, action) => {
             state = Object.assign({}, state, { quotes: quotes});
             return state;
         }
-        
+
+        case DELETE_QUOTE:{
+            let quotes = cloneObject(state.quotes);
+            let index = getIndex(quotes, action.id);
+            if (index !== -1){
+                quotes.splice(index, 1);
+            }
+            state = Object.assign({}, state, {quotes: quotes});
+            return state;
+        }
         default:
             return state;
     }
