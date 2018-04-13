@@ -1,6 +1,6 @@
 'use strict';
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
     StyleSheet, FlatList, View, Text, ActivityIndicator
 } from 'react-native';
@@ -16,32 +16,32 @@ class Home extends Component {
         this.renderItem = this.renderItem.bind(this);
     }
 
-    componentDidMount(){
+    componentDidMount() {
         return this.props.getData();
     }
 
-    render(){
-        if (this.props.loading){
+    render() {
+        if (this.props.loading) {
             return (
-                <View style={ styles.activityIndicatorContainer}>
+                <View style={styles.activityIndicatorContainer}>
                     <ActivityIndicator animating={true}/>
                 </View>
             );
         }
         else {
             return (
-                <View style={{flex:1, backgroundColor: '#F5F5F5', paddingTop:20}}>
+                <View style={{flex: 1, backgroundColor: '#F5F5F5', paddingTop: 20}}>
                     <FlatList
                         ref='listRef'
                         data={this.props.data}
                         renderItem={this.renderItem}
-                        keyExtractor={(item,index) => index}/>
+                        keyExtractor={(item, index) => index}/>
                 </View>
             );
         }
     }
 
-    renderItem({item,index}){
+    renderItem({item, index}) {
         return (
             <View style={styles.row}>
                 <Text style={styles.title}>
@@ -66,3 +66,26 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators(Actions, dispatch);
 }
 
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
+
+const styles = StyleSheet.create({
+    activityIndicatorContainer: {
+        backgroundColor: "#fff",
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1,
+    },
+    row: {
+        borderBottomWidth: 1,
+        borderColor: "#ccc",
+        padding: 10
+    },
+    title: {
+        fontSize: 15,
+        fontWeight: "600"
+    },
+    description:{
+        marginTop: 5,
+        fontSize: 14,
+    }
+});
