@@ -27,3 +27,21 @@ export function getQuotes() {
         });
     };
 }
+
+export function updateQuote(quote) {
+    return (dispatch) => {
+        AsyncStorage.getItem('data', (err,quotes) => {
+            if (quotes !== null) {
+                quotes = JSON.parse(quotes);
+                var index = getIndex(quotes, quote.id);
+                if (index !== -1) {
+                    quotes[index]['author'] = quote.author;
+                    quotes[index]['quote'] = quote.quote;
+                }
+                AsyncStorage.setItem('data', JSON.stringify(quotes), () => {
+                    dispatch({type: UPDATE_QUOTE, quote:quote});
+                });
+            }
+        });
+    };
+}
