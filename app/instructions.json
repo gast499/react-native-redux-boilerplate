@@ -22,11 +22,11 @@
     },
     {
       "title": "Create your component",
-      "description": "In your components folder create a js file 'home.js'"
+      "description": "In your components folder create a js file 'home.js' --DONE"
     },
     {
       "title": "Create Store",
-      "description": "In the app folder, create a js file 'store.js'"
+      "description": "In the app folder, create a js file 'store.js' --DONE"
     },
     {
       "title": "Link it all together",
