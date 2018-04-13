@@ -40,5 +40,17 @@ class Home extends Component {
             );
         }
     }
-    
-}
+
+    renderItem({item,index}){
+        return (
+            <View style={styles.row}>
+                <Text style={styles.title}>
+                    {(parseInt(index) + 1)}(". "){item.title}
+                </Text>
+                <Text style={styles.description}>
+                    {item.description}
+                </Text>
+            </View>
+        );
+    }
+};
