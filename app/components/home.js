@@ -8,3 +8,15 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import * as Actions from '../actions/';
+
+class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+        this.renderItem = this.renderItem.bind(this);
+    }
+
+    componentDidMount(){
+        return this.props.getData();
+    }
+}
