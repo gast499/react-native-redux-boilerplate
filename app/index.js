@@ -17,5 +17,16 @@ class Main extends Component {
             }
         });
     }
-    
+    render(){
+        return (
+            <Router>
+                <Scene key="root">
+                    <Scene key="home" component={Home} title="Home" initial/>
+                    <Scene key="new_quote" component={NewQuote} title="New Quote"/>
+                </Scene>
+            </Router>
+        );
+    }
 }
+
+export default connect(null, {getQuotes})(Main);
