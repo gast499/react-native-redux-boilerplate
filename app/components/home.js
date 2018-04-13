@@ -19,4 +19,26 @@ class Home extends Component {
     componentDidMount(){
         return this.props.getData();
     }
+
+    render(){
+        if (this.props.loading){
+            return (
+                <View style={ styles.activityIndicatorContainer}>
+                    <ActivityIndicator animating={true}/>
+                </View>
+            );
+        }
+        else {
+            return (
+                <View style={{flex:1, backgroundColor: '#F5F5F5', paddingTop:20}}>
+                    <FlatList
+                        ref='listRef'
+                        data={this.props.data}
+                        renderItem={this.renderItem}
+                        keyExtractor={(item,index) => index}/>
+                </View>
+            );
+        }
+    }
+    
 }
