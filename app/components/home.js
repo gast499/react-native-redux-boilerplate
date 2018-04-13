@@ -2,8 +2,9 @@
 
 import React, {Component} from 'react';
 import {
-    StyleSheet, FlatList, View, Text, ActivityIndicator, TouchableHighlight, ActionSheetIOS
+    StyleSheet, FlatList, View, Text, ActivityIndicator, TouchableHighlight, TouchableWithoutFeedback
 } from 'react-native';
+import ActionSheet from 'react-native-actionsheet';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as ReduxActions from '../actions/';
@@ -17,28 +18,44 @@ class Home extends Component {
         super(props);
         this.state = {};
         this.renderItem = this.renderItem.bind(this);
-        this.showOptions = this.showOptions.bind(this);
+        this.showActionSheet = this.showActionSheet.bind(this);
     }
 
     componentDidMount() {
         return this.props.getQuotes();
     }
-
-    showOptions(quote) {
-        ActionSheetIOS.showActionSheetWithOptions({
-                options: BUTTONS,
-                cancelButtonIndex: CANCEL_INDEX,
-                destructiveButtonIndex: 1,
-            },
-            (buttonIndex) => {
-                if (buttonIndex === 0){
-                    Actions.new_quote({quote: quote, edit:true, title:"Edit Quote"});
-                }
-                else if(buttonIndex === 1) {
-                    this.props.deleteQuote(quote.id);
-                }
-            });
+    showActionSheet(quote){
+        this.ActionSheet.show({
+            options: BUTTONS,
+            cancelButtonIndex: CANCEL_INDEX,
+            destructiveButtonIndex: 1,
     }
+        ),
+        //this.state.quote = quote;
+        (buttonIndex) => {
+            if (buttonIndex === 0){
+                Actions.new_quote({quote: quote, edit:true, title:"Edit Quote"});
+            }
+            else if(buttonIndex === 1) {
+                this.props.deleteQuote(quote.id);
+            }
+        };
+    }
+    // showOptions(quote) {
+    //     ActionSheetIOS.showActionSheetWithOptions({
+    //             options: BUTTONS,
+    //             cancelButtonIndex: CANCEL_INDEX,
+    //             destructiveButtonIndex: 1,
+    //         },
+    //         (buttonIndex) => {
+    //             if (buttonIndex === 0){
+    //                 Actions.new_quote({quote: quote, edit:true, title:"Edit Quote"});
+    //             }
+    //             else if(buttonIndex === 1) {
+    //                 this.props.deleteQuote(quote.id);
+    //             }
+    //         });
+    // }
 
     render() {
         if (this.props.loading) {
@@ -68,7 +85,7 @@ class Home extends Component {
 
     renderItem({item, index}) {
         return (
-            <TouchableHighlight onPress={() => this.showOptions(item)} underlayColor='rgba(0,0,0,.2)'>
+            <TouchableHighlight onPress={() => this.showActionSheet(item)} underlayColor='rgba(0,0,0,.2)'>
                 <View style={styles.row}>
                     <Text style={styles.quote}>
                         {item.quote}

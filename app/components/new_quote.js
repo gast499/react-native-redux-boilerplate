@@ -95,7 +95,7 @@ var styles = StyleSheet.create({
     quote: {
         fontSize: 17,
         lineHeight: 38,
-        fontFamily: 'Helvetica Neue',
+        fontFamily: 'normal',
         color: "#333333",
         padding: 16,
         paddingLeft:0,
@@ -110,7 +110,7 @@ var styles = StyleSheet.create({
         fontWeight: "400",
         lineHeight: 22,
         fontSize: 16,
-        fontFamily: 'Helvetica Neue',
+        fontFamily: 'normal',
         height:25+32,
         padding: 16,
         paddingLeft:0
