@@ -30,7 +30,7 @@
     },
     {
       "title": "Link it all together",
-      "description": "Redux needs to inject a store holding the app state into the app. To do so, it requires a ‘Provider’ wrapping the whole app.In the app folder, create a js file 'setup.js'"
+      "description": "Redux needs to inject a store holding the app state into the app. To do so, it requires a ‘Provider’ wrapping the whole app.In the app folder, create a js file 'setup.js' --DONE"
     },
     {
       "title": "Update your main files",
