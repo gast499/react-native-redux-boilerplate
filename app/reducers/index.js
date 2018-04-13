@@ -43,6 +43,15 @@ const dataReducer = (state = dataState, action) => {
     }
 };
 
+function cloneObject(object) {
+    return JSON.parse(JSON.stringify(object));
+}
+
+function getIndex(data, id) {
+    let clone = cloneObject(data);
+    return clone.findIndex((obj) => parseInt(obj.id) === parseInt(id));
+}
+
 const rootReducer = combineReducers({
     dataReducer
 })
