@@ -12,3 +12,9 @@ const dataReducer = ( state = dataState, action) => {
             return state;
     }
 };
+
+const rootReducer = combineReducers({
+    dataReducer
+})
+
+export default rootReducer;
